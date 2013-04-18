@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/TodayButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Today" android:layout_weight="25" android:textSize="35dp" android:onClick="filterclick"/>
+
+    <Button
+        android:id="@+id/TomorrowButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Tomorrow" android:layout_weight="25" android:textSize="35dp" android:onClick="filterclick"/>
+
+    <Button
+        android:id="@+id/ThisWeekButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="This Week" android:layout_weight="25" android:textSize="35dp" android:onClick="filterclick"/>
+
+    <Button
+        android:id="@+id/AllButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="All" android:layout_weight="25" android:textSize="35dp" android:onClick="filterclick"/>
+
+</LinearLayout>

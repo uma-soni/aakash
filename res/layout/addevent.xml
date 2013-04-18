@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+>
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Title:"
+        android:textSize="35dp" />
+        
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter title"
+        android:textSize="35dp" 
+        android:id="@+id/editTitle"/>
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type:"
+        android:textSize="35dp" >
+    </TextView>
+ 	<RadioGroup
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/groupType"
+    >
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Academics"
+        android:layout_weight="50"
+        android:textSize="35dp" android:id="@+id/RBAcademics"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anniversary"
+        android:layout_weight="50" 
+        android:textSize="35dp" android:id="@+id/RBAnniversary"/> 
+   
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birthday"
+        android:layout_weight="50"
+  		android:textSize="35dp"
+  		
+         android:id="@+id/RBBirthday"/>
+</RadioGroup>
+
+    <TextView  
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content" 
+    android:id="@+id/textView4" 
+    android:textSize="35dp" 
+    android:text="Date:">
+    </TextView>
+	<DatePicker
+    android:id="@+id/datePicker"
+     android:calendarViewShown="false" 
+     android:layout_height="wrap_content" android:layout_width="514dp">
+     </DatePicker>
+    <TextView
+        android:id="@+id/TextView02"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Priority:"
+        android:textSize="35dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter priority(integer)"
+        android:inputType="number"
+        android:textSize="35dp" 
+        android:id="@+id/editPriority"/>
+
+    <TextView
+        android:id="@+id/TextView03"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alarm:"
+        android:textSize="35dp" />
+    <TimePicker android:layout_height="wrap_content" 
+    android:layout_width="506dp" android:id="@+id/timePicker">
+    </TimePicker>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Occurence:"
+        android:textSize="35dp" />
+    <RadioGroup android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="vertical"  android:id="@+id/groupOccur" android:hapticFeedbackEnabled="true">
+        <RadioButton android:text="Once" 
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content"
+        android:textSize="35dp" android:id="@+id/RBOnce">
+        </RadioButton>
+        <RadioButton android:text="Yearly" android:layout_height="wrap_content" android:layout_width="wrap_content"
+        android:textSize="35dp" android:id="@+id/RBYearly"></RadioButton>
+    </RadioGroup>
+  
+     <LinearLayout
+  	android:layout_width="fill_parent"
+  	android:orientation="horizontal" 	 
+    android:layout_weight="50" 
+    android:layout_height="fill_parent"
+    >
+
+       <Button
+           android:id="@+id/SubmitButton"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_weight="30"
+           android:text="Submit"
+           android:textSize="30dp" android:onClick="eventHandler"/>
+           
+            <Button android:textSize="30dp" 
+    android:text="Cancel" 
+    android:layout_weight="30" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" android:id="@+id/CancelButton" android:onClick="eventHandler">
+    </Button>
+    
+    <Button android:textSize="30dp" 
+    android:text="Cancel" 
+    android:layout_weight="30" 
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" android:visibility="invisible" android:id="@+id/Button">
+    </Button>
+  </LinearLayout>
+  
+</LinearLayout>
+</ScrollView>

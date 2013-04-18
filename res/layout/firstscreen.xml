@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  
+  <Button 
+  android:id="@+id/goToCalendar" 
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:text="Go to Calendar" 
+  android:textSize="30dp" android:visibility="visible" android:layout_weight="25" android:onClick="clickHandler"></Button>
+ 
+  <Button 
+  android:id="@+id/viewEvent" 
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:text="View Event" 
+  android:textSize="30dp" android:visibility="visible" android:layout_weight="25" android:onClick="clickHandler"></Button>
+  <Button 
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:textSize="30dp" 
+  android:text="Add Event"
+  android:id="@+id/AddEvent" android:onClick="clickHandler" android:visibility="visible" android:layout_weight="25"></Button>
+  <Button 
+  android:id="@+id/updateEvent" 
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content" 
+  android:text="Update Event"
+  android:textSize="30dp" android:visibility="visible" android:layout_weight="25" android:onClick="clickHandler"></Button>
+  </LinearLayout>

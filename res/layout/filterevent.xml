@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/AcademicsButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Academics" android:layout_weight="25" android:textSize="35dp" android:onClick="FilterDatesClick"/>
+
+    <Button
+        android:id="@+id/AnniversaryButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Anniversary" android:layout_weight="25" android:textSize="35dp" android:onClick="FilterDatesClick"/>
+
+    <Button
+        android:id="@+id/BirthdayButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Birthday" android:layout_weight="25" android:textSize="35dp" android:onClick="FilterDatesClick"/>
+
+    <Button
+        android:id="@+id/AllEventsButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="All Events" android:layout_weight="25" android:textSize="35dp" android:onClick="FilterDatesClick"/>
+
+</LinearLayout>
